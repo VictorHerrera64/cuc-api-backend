@@ -5,9 +5,10 @@ import { AppService } from './app.service';
 import { ClientesModule } from './clientes/clientes.module';
 import { ProductosModule } from './productos/productos.module';
 import { User } from './users/entities/user.entity';
+import { UsersModule } from './users/users.module';
 
 @Module({
-  imports: [ClientesModule, ProductosModule,
+  imports: [ClientesModule, ProductosModule,UsersModule,
       TypeOrmModule.forRoot({
       type: 'postgres',
       host: 'localhost',
